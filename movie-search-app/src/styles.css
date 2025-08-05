@@ -1,0 +1,32 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#fff;
+  --primary:#1f7a8c;
+  --muted:#666;
+}
+
+body { margin:0; font-family: Inter, sans-serif; background:var(--bg); color:#111; }
+.nav { background:var(--primary); padding:12px 20px; color:#fff; }
+.brand { color:#fff; text-decoration:none; font-weight:700; font-size:20px; }
+.container { padding:20px; max-width:1100px; margin:0 auto; }
+.footer { text-align:center; padding:14px; color:var(--muted); }
+
+.searchForm { display:flex; gap:8px; margin-bottom:18px; }
+.searchInput { flex:1; padding:10px; border-radius:6px; border:1px solid #ddd; }
+.searchBtn { padding:10px 14px; border: none; background:var(--primary); color:#fff; border-radius:6px; cursor:pointer; }
+
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap:16px; }
+.card { background:var(--card); border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06); display:flex; flex-direction:column; }
+.cardPoster { width:100%; height:270px; object-fit:cover; }
+.cardBody { padding:10px; display:flex; flex-direction:column; gap:8px; }
+.cardTitle { margin:0; font-size:16px; }
+.cardYear { margin:0; color:var(--muted); font-size:14px; }
+.detailsBtn { text-decoration:none; margin-top:auto; padding:8px; border-radius:6px; background:var(--primary); color:#fff; text-align:center; }
+
+.loading { padding:20px; text-align:center; color:var(--muted); }
+.error { padding:12px; background:#ffe7e7; color:#8a1d1d; border-radius:8px; margin:8px 0; }
+
+.detailCard { display:flex; gap:20px; background:var(--card); padding:16px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.06); }
+.detailPoster { width:260px; height:380px; object-fit:cover; border-radius:6px; }
+.detailInfo { flex:1; }
+.backLink { display:inline-block; margin-bottom:12px; color:var(--primary); text-decoration:none; }
