@@ -1,0 +1,34 @@
+:root{
+  --bg:#f5f7fb;
+  --card:#fff;
+  --muted:#6b7280;
+  --accent:#0b74ff;
+  --danger:#ef4444;
+}
+
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, Arial, sans-serif; margin:0; background:var(--bg); color:#111}
+.app{max-width:900px;margin:32px auto;padding:20px}
+header h1{margin:0;font-size:1.6rem}
+header .sub{color:var(--muted);margin-top:6px}
+
+.controls{display:flex;gap:8px;margin:16px 0 20px}
+.btn{background:var(--accent);color:white;border:none;padding:8px 12px;border-radius:6px; cursor:pointer}
+.btn:hover{opacity:0.95}
+.btn-danger{background:var(--danger)}
+
+.notification-list{display:flex;flex-direction:column;gap:10px}
+.notification{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,0.06);display:flex;justify-content:space-between;align-items:center;border-left:4px solid transparent}
+.notification.unread{font-weight:600;border-left-color:var(--accent);background:linear-gradient(90deg, rgba(11,116,255,0.03), transparent)}
+.notification.read{opacity:0.85}
+
+.notification .meta{display:flex;gap:8px;align-items:center;color:var(--muted)}
+.badge{background:var(--accent);color:#fff;padding:3px 6px;border-radius:999px;font-size:12px}
+
+.empty{padding:20px;background:var(--card);border-radius:8px;color:var(--muted);text-align:center}
+
+footer{margin-top:24px;color:var(--muted)}
+
+/* toast */
+.toast{position:fixed;right:20px;bottom:20px;z-index:200}
+.toast-inner{background:#111;color:#fff;padding:10px 14px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.25);min-width:220px}
